@@ -40,8 +40,13 @@ function draw() {
   image(flippedVideo, 0, 0);
 
   // Draw the label
-  fill('red');
-  textSize(70);
+  if(label=='Wrong: No Mask'){
+    fill('red');
+  }
+  else{
+    fill('#00ff00');
+  }
+  textSize(60);
   textAlign(CENTER);
   text(label, width / 2, height - 4);
 }
